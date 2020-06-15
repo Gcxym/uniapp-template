@@ -1,0 +1,130 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"enablePullDownRefresh": false, // 删除此项: 不开启系统自带的下拉刷新, 默认false
+				"disableScroll": true, // 禁止原生页面滚动, 解决Android小程序下拉卡顿的问题
+				"app-plus": {
+					"bounce": "none" // 取消APP端iOS回弹,避免与下拉刷新冲突,以及bounce边缘1秒卡顿
+				}
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登陆",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/index/work/detail-user",
+			"style": {
+				"navigationBarTitleText": "任务"
+			}
+		},
+		{
+			"path": "pages/file/file-preview",
+			"style": {
+				"navigationBarTitleText": "附件预览"
+			}
+		},
+		{
+			"path": "pages/project/index",
+			"style": {
+				"navigationBarTitleText": "消息"
+			}
+		},
+		{
+			"path": "pages/project/project-detail",
+			"style": {
+				"navigationBarTitleText": "项目详细"
+			}
+		},
+		{
+			"path": "pages/analysis/index",
+			"style": {
+				"navigationBarTitleText": "工作台"
+			}
+		},
+		{
+			"path": "pages/user/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/user/info/info",
+			"style": {}
+		},
+		{
+			"path": "pages/user/modify/modify",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+		},
+		{
+			"path": "pages/communication/communication",
+			"style": {
+				"navigationBarTitleText": "通讯录"
+			}
+		},
+		{
+			"path": "pages/communication/personal",
+			"style": {
+				"navigationBarTitleText": "个人信息"
+			}
+		}, {
+			"path": "pages/user/website/website",
+			"style": {
+				"navigationBarTitleText": "切换站点"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#8a8a8a",
+		"selectedColor": "#4364F7",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "消息",
+				"iconPath": "static/img/tabbar/message.png",
+				"selectedIconPath": "static/img/tabbar/message1.png"
+			},
+			{
+				"pagePath": "pages/communication/communication",
+				"text": "通讯录",
+				"iconPath": "static/img/tabbar/tongxunlu.png",
+				"selectedIconPath": "static/img/tabbar/tongxunlu1.png"
+			},
+			{
+				"pagePath": "pages/analysis/index",
+				"text": "工作台",
+				"iconPath": "static/img/tabbar/gongzuotai.png",
+				"selectedIconPath": "static/img/tabbar/gongzuotai1.png"
+			},
+			{
+				"pagePath": "pages/user/index",
+				"text": "我的",
+				"iconPath": "static/img/tabbar/user.png",
+				"selectedIconPath": "static/img/tabbar/user1.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uniapp-admin",
+		"navigationBarBackgroundColor": "#4364F7",
+		"backgroundColor": "#F8F8F8"
+		// "mp-alipay": {
+		// 	/* 支付宝小程序特有相关 */
+		// 	"transparentTitle": "always",
+		// 	"allowsBounceVertical": "NO"
+		// },
+		// "navigationBarBackgroundColor": "#0081ff",
+		// "navigationBarTitleText": "uniapp-admin",
+		// "navigationStyle": "custom",
+		// "navigationBarTextStyle": "white"
+	}
+}
